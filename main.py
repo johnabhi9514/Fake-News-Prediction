@@ -6,7 +6,7 @@ import re
 from nltk.stem.porter import PorterStemmer
 from sklearn.feature_extraction.text import TfidfVectorizer
 
-import nltk
+nltk.download('stopwords')
 
 app = Flask(__name__)
 ps = PorterStemmer()
